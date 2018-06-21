@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>CIPHER-CESAR</title>
+  <link rel="icon" type="image/png" href="img/padlock.png" />
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Encabezado de la página  -->
+  <header>
+    <h1>Cifrado César</h1>
+    <p> El cifrado césar mueve cada letra de un determinado número de espacios en el alfabeto.
+    <strong>¡te invitamos a codificar y decodificar tus mensajes!</strong></p>
+  </header>
+
+  <!-- Cuerpo de página con input que pide offset, botón de cifrado y cuadros de texto que pide texto a descifrar y el que escribe el texto -->
+  
+    <!--introducción e instrucciones-->
+    
+      <img src="../src/img/cifrado-cesar-erwol.jpg" alt="example">
+   
+    
+  <div class="primer_Campo">
+      <input id="firstOffset" placeholder="ingrese su número key" type="number">
+    <button id="btnEncode"> Cifrar </button>
+    <textarea id="textAreaEncode" placeholder="Escribe texto a cifrar" name="texto" cols="30" rows="10"></textarea>
+    <textarea name="texto" id="resultEncode" cols="30" rows="10" readonly="readonly"></textarea>
+  </div>
+     
+  <div class="segundo_Campo">
+    <input id="secondOffset" placeholder="ingrese número key" type="number">
+    <button id="btnDecode"> Descifrar </button>
+    <textarea id="textAreaDecode" placeholder="Escribe texto a descifrar" name="texto" cols="30" rows="10"></textarea>
+    <textarea name="texto" id="resultDecode" cols="30" rows="10" readonly="readonly"></textarea>
+  </div>
+  
+
+    <div id="root"></div>
+
+  <!-- script de archivos JS -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
